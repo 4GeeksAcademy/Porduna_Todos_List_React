@@ -1,24 +1,21 @@
 import React from "react";
 
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import naughtyDevil from "../../img/Naughty_Devil.png";
+import { TodoList } from "/workspaces/Porduna_Todos_List_React/src/js/component/TodoList.jsx";
 
 //create your first component
 const Home = () => {
 	return (
 		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
+			<TodoList />
 			<p>
-				<img src={rigoImage} />
+				<img src={naughtyDevil} width={380} />
 			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
+			<a href="#" className="btn btn-danger">
+				Press to crack it all!!
 			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+			<p>Made by <b>Porduna</b></p>
 		</div>
 	);
 };
